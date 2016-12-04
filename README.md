@@ -4,8 +4,11 @@ These scripts are meant to turn a raspberry pi runing raspbian and pixel into a 
 After downloading the scripts, set them all to executable with:
   sudo chmod +x *.sh
 
-Add /usr/kiosk-scripts to the PATH by editng /etc/environment:
-  PATH=$PATH:/usr/kiosk-scripts (or wherever you cloned the scripts at)
+Add /usr/kiosk-scripts to the PATH by editng /etc/profile:
+  if [ "`id -u`" -eq 0 ]; then
+    PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+  else
+    PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/kiosk-scripts"
 
 To configure the pi to be a kiosk turn off the screen saver and such and to kick off the script at desktop start 
 change the .config/lxsession/LXDE-pi/autostart file to be:
