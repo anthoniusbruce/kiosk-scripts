@@ -22,3 +22,4 @@ change the .config/lxsession/LXDE-pi/autostart file to be:
   @/usr/kiosk-scripts/kiosk-watch.sh &
   @/usr/kiosk-scripts/kiosk-terminal.sh
 
+Change the location of where to find the list of web sites for the kiosk in the scripts kiosk-terminal.sh and kiosk-watch.sh
