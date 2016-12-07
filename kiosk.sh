@@ -11,4 +11,4 @@ chromium-browser --enable-logging --v=1 --noerrdialogs --start-fullscreen ${site
 #chromium-browser --noerrdialogs ${sites[*]} &
 
 # get the tabs cycling
-watch -n60 "./chromium-rotator.sh"
+watch -n60 "/usr/kiosk-scripts/chromium-rotator.sh"

@@ -1,2 +1,2 @@
 #!/bin/bash
-lxterminal -e ./kiosk.sh /var/www/html/kiosk/sites
+lxterminal -e /usr/kiosk-scripts/kiosk.sh /var/www/html/kiosk/sites
