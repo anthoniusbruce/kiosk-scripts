@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 60
 
 ip=$(hostname --all-ip-addresses)
 
